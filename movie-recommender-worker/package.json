@@ -1,0 +1,23 @@
+{
+  "name": "movie-recommender-worker",
+  "version": "0.0.0",
+  "private": true,
+	"type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.6.4",
+    "vitest": "2.1.8",
+    "wrangler": "^3.107.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.15",
+    "openai": "^4.82.0"
+  }
+}
