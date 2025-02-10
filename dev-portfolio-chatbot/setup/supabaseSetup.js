@@ -20,7 +20,7 @@ const processAndStore = async () => {
 	try {
 		const output = await splitter.createDocuments([textData])
 
-		const openAIApiKey = PLACEHOLDER
+		const openAIApiKey = PLACEHOLDER;
 
 		await SupabaseVectorStore.fromDocuments(
 			output,
